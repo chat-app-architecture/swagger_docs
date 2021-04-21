@@ -1,4 +1,4 @@
-# Swagger Documentation Repository
+# Swagger Documentation for Chat API
 
 This repository contains the Swagger docs for the Rails API.
 
