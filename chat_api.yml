@@ -50,7 +50,7 @@ paths:
         "500":
           description: Internal Server Error
       security:
-        - genUAuthToken: []
+        - stonksAuthToken: []
     get:
       summary: List Groups
       description: Retrieves a list of groups
@@ -89,7 +89,7 @@ paths:
         "500":
           description: Internal Server Error
       security:
-        - genUAuthToken: []
+        - stonksAuthToken: []
 
   '/groups/{id}':
     get:
@@ -138,7 +138,7 @@ paths:
         "500":
           description: Internal Server Error
       security:
-        - genUAuthToken: []
+        - stonksAuthToken: []
 
   '/group_messages':
     post:
@@ -186,7 +186,7 @@ paths:
         "500":
           description: Internal Server Error
       security:
-        - genUAuthToken: []
+        - stonksAuthToken: []
 
   '/users':
     post:
@@ -234,7 +234,7 @@ paths:
         "500":
           description: Internal Server Error
       security:
-        - genUAuthToken: []
+        - stonksAuthToken: []
   '/users/sign_in':
     post:
       summary: Sign in a User
@@ -320,11 +320,11 @@ paths:
         "500":
           description: Internal Server Error
       security:
-        - genUAuthToken: []
+        - stonksAuthToken: []
 
 components:
   securitySchemes:
-    genUAuthToken:
+    stonksAuthToken:
       description: JWT provided by the `Authentication` API endpoint
       type: http
       scheme: bearer
